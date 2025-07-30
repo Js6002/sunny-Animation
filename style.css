@@ -1,0 +1,23 @@
+body {
+  background-color: #0c0c0c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.sunny-container {
+  position: relative;
+}
+
+.sunny {
+  width: 320px;
+  animation: float 3s ease-in-out infinite;
+  filter: drop-shadow(0 0 12px purple);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
